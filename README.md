@@ -1,5 +1,11 @@
 # Node-turn
 
+[![npm version](https://badge.fury.io/js/node-turn.svg)](https://www.npmjs.com/node-turn)
+[![Build Status](https://travis-ci.org/Atlantis-Software/node-turn.svg?branch=master)](https://travis-ci.org/Atlantis-Software/node-turn)
+[![Coverage Status](https://coveralls.io/repos/github/Atlantis-Software/node-turn/badge.svg?branch=master)](https://coveralls.io/github/Atlantis-Software/node-turn?branch=master)
+[![NSP Status](https://nodesecurity.io/orgs/atlantis/projects/fac5e217-aa66-4a6b-9090-a82a52d20f83/badge)](https://nodesecurity.io/orgs/atlantis/projects/fac5e217-aa66-4a6b-9090-a82a52d20f83)
+[![Dependencies Status](https://david-dm.org/Atlantis-Software/node-turn.svg)](https://david-dm.org/Atlantis-Software/node-turn)
+
 Node-turn is a STUN/TURN server for Node.JS
 
 Supported RFCs:
