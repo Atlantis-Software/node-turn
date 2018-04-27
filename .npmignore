@@ -4,3 +4,7 @@ package-lock.json
 node_modules
 test
 karma.conf.js
+.eslintignore
+.eslintrc
+.nyc_output/
+.travis.yml

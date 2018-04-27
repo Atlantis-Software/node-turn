@@ -9,7 +9,7 @@ try {
   var logFile;
   var configFile;
 
-  switch(os.platform()) {
+  switch (os.platform()) {
     case 'win32':
       logFile = 'c:\\Windows\\Logs\\node-turn.log';
       configFile = 'C:\\ProgramData\\node-turn.conf';
@@ -24,6 +24,7 @@ try {
   var hostname = os.hostname();
   appenders[hostname] = { type: 'file', filename: logFile };
 
+  /* eslint-disable no-console */
   if (!fs.existsSync(logFile)) {
     appenders[hostname] = { type: 'console'};
     console.log('Using STDOUT for logging');
@@ -35,6 +36,7 @@ try {
     console.log('Please copy with correct permission and modify sample-config.conf to ' + configFile);
     configFile = 'sample-config.conf';
   }
+  /* eslint-enable no-console */
 
   var config = yaml.safeLoad(fs.readFileSync(configFile, 'utf8'));
 
@@ -54,5 +56,5 @@ try {
   var server = new Server(config);
   server.start();
 } catch (e) {
-  console.log(e);
+  console.log(e); // eslint-disable-line no-console
 }

@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": [1, 2, { "SwitchCase": 1 }],
+    "no-undef": 1,
+    "no-console": 1,
+    "keyword-spacing": 1,
+    "no-trailing-spaces": 1,
+
+    "no-unused-vars": 1,
+    "no-redeclare": 1,
+    "no-unused-labels": 1,
+    "no-unreachable": 1,
+    "semi": [1, "always"],
+    "no-extra-semi": 1,
+    "no-fallthrough": 1,
+    "no-constant-condition": 1,
+    "no-mixed-spaces-and-tabs": 1,
+    "no-case-declarations": 1
+  }
+}
