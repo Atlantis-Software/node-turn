@@ -19,7 +19,14 @@ module.exports = function (config) {
       './test/test.js'
     ],
 
-    browsers : ['Chrome'],
+    browsers : ['ChromeHeadlessNoSandbox'],
+
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
 
     singleRun: true,
 
