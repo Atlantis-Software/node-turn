@@ -1,6 +1,6 @@
 {
   "name": "node-turn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "STUN/TURN Server",
   "main": "./lib/server.js",
   "scripts": {
@@ -12,18 +12,26 @@
   "author": "Atlantis Software",
   "license": "MIT",
   "dependencies": {
-    "js-yaml": "~3.11.0",
-    "log4js": "~2.5.3"
+    "js-yaml": "~3.12.0",
+    "log4js": "~3.0.5"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
-    "eslint": "~4.19.1",
+    "coveralls": "^3.0.2",
+    "eslint": "~5.6.0",
     "istanbul": "0.4.5",
-    "karma": "~2.0.2",
+    "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-mocha": "~1.3.0",
     "karma-mocha-reporter": "~2.2.5",
-    "mocha": "~5.1.1",
-    "nyc": "~11.4.1"
-  }
+    "mocha": "~5.2.0",
+    "nyc": "~13.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atlantis-Software/node-turn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Atlantis-Software/node-turn/issues"
+  },
+  "homepage": "https://github.com/Atlantis-Software/node-turn#readme"
 }
