@@ -2,7 +2,7 @@ const Server = require('./lib/server');
 
 module.exports = function (config) {
   const server = new Server({
-    debugLevel: 'OFF',
+    debugLevel: 'NONE',
     authMech: 'long-term',
     credentials: {
       username: "password"
@@ -19,7 +19,7 @@ module.exports = function (config) {
       './test/test.js'
     ],
 
-    browsers : ['ChromeHeadlessNoSandbox'],
+    browsers : ['ChromeHeadlessNoSandbox', 'Firefox'],
 
     customLaunchers: {
       ChromeHeadlessNoSandbox: {

@@ -31,7 +31,7 @@ describe('stun', function() {
       }
       var candidate = ice.candidate.candidate;
       // looking for srflx (server reflexive)
-      if (candidate.includes('typ srflx') && candidate.includes('127.0.0.1')) {
+      if (candidate.includes('typ srflx')) {
         pc.close();
         done();
       }
@@ -71,8 +71,8 @@ describe('turn', function() {
         return;
       }
       var candidate = ice.candidate.candidate;
-      // looking for srflx (server reflexive)
-      if (candidate.includes('typ relay') && candidate.includes('127.0.0.1')) {
+      // looking for relay
+      if (candidate.includes('typ relay')) {
         pc.close();
         done();
       }
