@@ -28,9 +28,9 @@ $ cd ./node_modules/node-turn
 $ su
 # mkdir /etc/node-turn
 # cp ./sample-config.conf /etc/node-turn/node-turn.conf
-# chmod 777 /etc/node-turn/node-turn.conf
+# chmod 640 /etc/node-turn/node-turn.conf
 # touch /var/log/node-turn.log
-# chmod 777 /var/log/node-turn.log
+# chmod 640 /var/log/node-turn.log
 # exit
 $ vi /etc/node-turn/node-turn.conf
 $ npm run start
