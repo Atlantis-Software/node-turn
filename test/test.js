@@ -16,7 +16,6 @@ var reflexiveAddress = function(ip, done) {
 
   var servers = {
     iceServers: [{
-      //urls: "stun:127.0.0.1:3478"
       urls: "stun:[" + ip + "]:3478"
     }
   ]};
@@ -31,8 +30,7 @@ var reflexiveAddress = function(ip, done) {
     }
     var candidate = ice.candidate.candidate;
     // looking for srflx (server reflexive)
-
-    if (candidate.includes('typ srflx') && candidate.includes(ip)) {
+    if (candidate.includes('typ srflx')) {
       pc.close();
       done();
     }
@@ -43,7 +41,6 @@ var reflexiveAddress = function(ip, done) {
   pc.createOffer(function(offer) {
     pc.setLocalDescription(offer, function() {}, function() {});
   }, function() {});
-
 };
 
 
@@ -71,12 +68,10 @@ var relayTransportAddress = function(ip, done) {
       return;
     }
     var candidate = ice.candidate.candidate;
-    // looking for srflx (server reflexive)
-    if (candidate.includes('typ relay') && candidate.includes(ip)) {
+    // looking for relay
+    if (candidate.includes('typ relay')) {
       pc.close();
       done();
-    } else {
-      throw new Error(candidate);
     }
   };
 

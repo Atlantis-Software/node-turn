@@ -2,7 +2,7 @@ const Server = require('./lib/server');
 
 module.exports = function (config) {
   const server = new Server({
-    debugLevel: 'OFF',
+    debugLevel: 'NONE',
     authMech: 'long-term',
     credentials: {
       username: "password"
