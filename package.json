@@ -1,6 +1,6 @@
 {
   "name": "node-turn",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "STUN/TURN Server",
   "main": "./lib/server.js",
   "scripts": {
