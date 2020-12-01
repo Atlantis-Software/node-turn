@@ -42,7 +42,7 @@ try {
 
   log4js.configure({
     appenders: appenders,
-    categories: { default: { appenders: [hostname], level: config['debug-level'] || 'ERROR' } }
+    categories: { default: { appenders: [hostname], level: config['debugLevel'] || 'ERROR' } }
   });
 
   const logger = log4js.getLogger(hostname);
