@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "description": "STUN/TURN Server",
   "main": "./lib/server.js",
+  "types": "./lib/server.d.ts",
   "scripts": {
     "start": "node start",
     "test": "nyc karma start",
